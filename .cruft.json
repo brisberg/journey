@@ -1,0 +1,16 @@
+{
+    "template": "https://github.com/brisberg/cruft-spindle-project/",
+    "commit": "73b28aa5d6ed43b5259803dfc3cc6a0a0df8bd21",
+    "context": {
+        "cookiecutter": {
+            "full_name": "Brandon Risberg",
+            "email": "brandon.risberg@gmail.com",
+            "github_username": "brisberg",
+            "title": "Journey",
+            "repo_slug": "journey",
+            "description": "Journey across the sea and overcome challenges along the way.",
+            "_template": "https://github.com/brisberg/cruft-spindle-project/"
+        }
+    },
+    "directory": null
+}

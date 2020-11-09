@@ -1,0 +1,9 @@
+id: "journey"
+version: "0.1.0"
+title: "Journey"
+format: "sugarcube-2.31.1"
+description: "Journey across the sea and overcome challenges along the way."
+header:
+  - "header/*"
+deps:
+  - "src/*"
