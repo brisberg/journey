@@ -1,6 +1,3 @@
-// Game Name key (for analytics)
-window.GAME_NAME = 'journey';
-
 // Setup Initial Static Data
 setup = {
   initialState: {
