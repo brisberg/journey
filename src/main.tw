@@ -3,9 +3,30 @@ Journey
 
 :: StoryData
 {
+	"ifid": "F76EC9DD-8B3B-43FE-A9F2-FA26005C9260",
 	"format": "SugarCube",
-	"format-version": "2.31.1"
+	"format-version": "2.31.1",
+	"start": "Start",
+	"zoom": 1
 }
 
+:: StoryInit
+<<set $hull to setup.initialState.hull>>
+<<set $crew to setup.initialState.crew>>
+<<set $fuel to setup.initialState.fuel>>
+<<set $distance to setup.initialState.distance>>
+
 :: Start
-Hello World from Twine on Spindle!
+/* Only send Start event when story is restarted */
+<<script>>pushEvent('Story', 'Start', '');<</script>>
+<<goto Launch>>
+
+:: PassageHeader
+You are $distance leagues away from your destination.
+----
+
+:: PassageFooter
+----
+Ship Hull: $hull/<<print setup.hullMax>>
+Crew: $crew/<<print setup.crewMax>> souls
+Fuel: $fuel/<<print setup.fuelMax>>

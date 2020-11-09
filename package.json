@@ -1,7 +1,7 @@
 {
   "name": "journey",
   "version": "0.1.0",
-  "description": "Journey across the sea and overcome challenges along the way.",
+  "description": "Travel the high seas, overcoming challenges in an Oregon Trail inspired game.",
   "scripts": {
     "build": "yarn run spindle",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,0 +1,9 @@
+id: "journey"
+version: "1.0.0"
+title: "Journey"
+description: "Travel the high seas, overcoming challenges in an Oregon Trail inspired game."
+head:
+  - "shared/analytics/header/analytics.html"
+deps:
+  - "games/journey"
+  - "shared/analytics/js"

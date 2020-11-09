@@ -1,6 +1,21 @@
 # Journey
 
-Journey across the sea and overcome challenges along the way.
+Travel the high seas, overcoming challenges in an Oregon Trail inspired game.
+
+Twine 2.3.7\
+Tweego 2.1.1\
+SugarCube 2.31.1
+
+### Features
+
+- Mainly a test game to explore some mechanics of SugarCube
+- Random series of event cards
+- Item pick ups (keys)
+- Startup, Footer passages
+- Simple Google Analytics with Custom Events
+
+### Tutorials
+- None
 
 ## Toolchain
 
