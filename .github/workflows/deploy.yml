@@ -49,12 +49,12 @@ jobs:
           FOLDER: dist      # The folder the action should deploy.
 
       - name: display
-        run: echo ${{steps.deploy.outputs.DEPLOYMENT_STATUS}}
+        run: echo ${{DEPLOYMENT_STATUS}}
 
       # Inform twine.brisberg.dev to pull the latest deployed version
       - name: Inform twine.brisberg.dev
         uses: peter-evans/repository-dispatch@v1
-        if: steps.deploy.outputs.DEPLOYMENT_STATUS == 'success'
+        if: DEPLOYMENT_STATUS == 'success'
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: brisberg/twine.brisberg.dev
