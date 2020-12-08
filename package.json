@@ -9,6 +9,6 @@
   "author": "Brandon Risberg",
   "license": "MIT",
   "devDependencies": {
-    "@brisberg/spindle": "^0.2.1"
+    "@brisberg/spindle": "^0.2.2"
   }
 }
