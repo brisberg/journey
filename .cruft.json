@@ -1,12 +1,13 @@
 {
     "template": "https://github.com/brisberg/cruft-spindle-project/",
-    "commit": "b76e9641f14a75235fcc0b4771a2d64a818347b0",
+    "commit": "f60febc7482a93acb31f1a9499438d136ecc4197",
     "context": {
         "cookiecutter": {
             "full_name": "Brandon Risberg",
             "email": "brandon.risberg@gmail.com",
             "github_username": "brisberg",
             "title": "Journey",
+            "subtitle": "Travel the High Seas",
             "repo_slug": "journey",
             "description": "Travel the high seas, overcoming challenges in an Oregon Trail inspired game.",
             "_template": "https://github.com/brisberg/cruft-spindle-project/"

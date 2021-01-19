@@ -1,0 +1,5 @@
+:: StoryInit
+<<set $hull to setup.initialState.hull>>
+<<set $crew to setup.initialState.crew>>
+<<set $fuel to setup.initialState.fuel>>
+<<set $distance to setup.initialState.distance>>

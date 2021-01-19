@@ -9,6 +9,7 @@
   "author": "Brandon Risberg",
   "license": "MIT",
   "devDependencies": {
-    "@brisberg/spindle": "^0.2.2"
+    "@brisberg/spindle": "^0.2.2",
+    "@types/twine-sugarcube": "^2.33.1"
   }
 }

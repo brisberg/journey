@@ -1,0 +1,4 @@
+:: Start
+/* Only send Start event when story is restarted */
+<<script>>pushEvent('Story', 'Start', '');<</script>>
+<<goto Launch>>

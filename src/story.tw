@@ -1,111 +1,31 @@
-:: Launch
-Flags fly high, husbands and wives wave from the pier, and bells ring as your vessle, H.M.S Titus, \
-leaves Port Royal on its maiden voyage.
+:: StoryTitle
+Journey
 
-Your ship is in tip-top shape and the crew is filled with joy and vigor.
+:: StorySubtitle
+Travel the High Seas
 
-The task ahead of you is a simple but important one: Voyage to Isla De'muerta and deliver much \
-needed supplies and munitions to colony there.
+:: StoryAuthor
+Brandon Risberg
 
-<<set $event to "Calm Seas">>
-[[Embark->Voyage]]
+:: StoryBanner
 
+:: StoryCaption
 
-:: Voyage [nobr]
-You are on your voyage!
-<br>
-<br>
-<<include $event>>
-<br>
-<br>
+:: StoryData
+{
+	"ifid": "F76EC9DD-8B3B-43FE-A9F2-FA26005C9260",
+	"format": "SugarCube",
+	"format-version": "2.31.1",
+	"start": "Start",
+	"zoom": 1
+}
 
-<<if $distance === 10>>
-  <<set $distance -= 10>>
-  [[Onward!->Island]]
-<<elseif $fuel <= 0>>
-  [[No Fuel]]
-<<elseif $crew <= 0>>
-  [[No Crew]]
-<<elseif $hull <= 0>>
-  [[No Hull]]
-<<else>>
-  /* Update standard variables for each voyage step */
-  <<set $event to randomEvent()>>
-  <<set $fuel -= 1>>
-  <<set $distance -= 10>>
-  [[Onward!->Voyage]]
-<</if>>
+:: PassageHeader
+You are $distance leagues away from your destination.
+----
 
-
-:: Try Again
-Your Voyage ends here.
-<<link "Try Again?">><<script>>UI.restart()<</script>><</link>>
-
-
-:: No Fuel
-Your engines chug to a stop as the last bits of coal are used up. You and your men look around \
-at each other in despair as you realize you will likely starve or freeze before anyone can reach you.
-
-<<script>>pushEvent('Story', 'Lose', 'No Fuel');<</script>>\
-<<include "Try Again">>
-
-
-:: No Crew
-You stand alone, captain of a derelict ship. All of your crew have been swallowed by the Sea \
-(or worse) and you are all that is left. It is impossible to run a ship this size alone. You \
-keep things running as long as you can, but eventually your stamina gives out.
-
-/* TODO: Add events here. (Hit a sandbar, sunk in a storm, pirates? etc) */\
-Drifting aimlessly at the sea winds' whim, you eventually feel a rough thud as your ship runs in \
-a long forgotten sandbar. The ship is beached permanently and it would take ten men to recover it.
-
-You feel so very tired. As you drift off to a final slumber, you wonder if another captain will \
-find your ship and make better use of your supplies.
-
-<<script>>pushEvent('Story', 'Lose', 'No Crew');<</script>>\
-<<include "Try Again">>
-
-
-:: No Hull
-Your ship creaks and groans under strain of holding itself together. Numerous gashes and \
-splintered boards dot the lower decks and you have been taking on water for some time.
-
-Finally the strain is too much and the aft section buckles, pulling the mast down with it.
-
-"Abbandon ship!" you shout, though it may be too late. Your crew scrambles to lower the \
-dingy and cram aboard. Some leaping to the water to swim for it.
-
-However, they say a Captain must go down with his ship. You remain aboard, sipping wine \
-as your crew rows into the distance and water slowly fills your cabin.
-
-<<script>>pushEvent('Story', 'Lose', 'No Hull');<</script>>\
-<<include "Try Again">>
-
-
-:: Island
-The sea is calm and the spies clear of clear of clouds. It is as if the sea knew how close \
-you were to journey's end it rewarded you with a brisk southernly wind pushing you onward.
-
-The Barrelman is the first to spot land on the horizon.
-
-"Land Ho!", he shouts triumphantly.
-
-Your navigator double checks his charts and confirms that you have at last arrived at your \
-final destination. Your crew rejoices and breaks out into a merry sea shanty. You can finally \
-relax and feel flush with relief as you stare at the steadily growing island on the horizon.
-
-[[Dock at Isle De'muerta->Win]]
-
-
-:: Win
-You land at Isla De'muerta and are greeted by the Harbormaster. He shakes your hand with much \
-enthusiasm, thanking you for your bravery and service to the Empire.
-
-Porters begin to unload your ship of it's precious supplies and cargo.
-
-You are treated to a find dinner in your honor by the Govenor of the island.
-
-You and your crew enjoy yourself for a time, but soon you feel the sea calling to you again.
-
-Will you set sail on another <<link "Voyage?">><<script>>UI.restart()<</script>><</link>>
-<<script>>pushEvent('Story', 'Win', '');<</script>>
+:: PassageFooter
+----
+Ship Hull: $hull/<<print setup.hullMax>>
+Crew: $crew/<<print setup.crewMax>> souls
+Fuel: $fuel/<<print setup.fuelMax>>
