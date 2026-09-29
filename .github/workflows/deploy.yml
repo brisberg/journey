@@ -1,58 +1,12 @@
-name: Deploy Game
-
+name: Deploy
 on:
-  push:
-    branches:
-      # Only on main branch
-      - main
+  push: { branches: [main] }
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  deploy-gh-pages:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        # Specify all desired node versions
-        node-version: [10.x]
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Use Go 1.15
-        uses: actions/setup-go@v2
-        with:
-          go-version: 1.15.x
-
-      - name: Setup Tweego
-        run: go get github.com/tmedwards/tweego
-
-      - name: Spindle Build
-        run: |
-          yarn install
-          yarn run spindle
-
-      - name: Prepare Deploy Package
-        run: |
-          mkdir dist
-          mv output/journey.html dist/index.html
-
-      - name: Deploy
-        id: deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages  # The branch the action should deploy to.
-          FOLDER: dist      # The folder the action should deploy.
-
-      # Inform twine.brisberg.dev to pull the latest deployed version
-      - name: Inform twine.brisberg.dev
-        uses: peter-evans/repository-dispatch@v1
-        if: env.DEPLOYMENT_STATUS == 'success'
-        with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
-          repository: brisberg/twine.brisberg.dev
-          event-type: update-all-games
+  deploy:
+    uses: brisberg/ci/.github/workflows/twine-pages.yml@v1
