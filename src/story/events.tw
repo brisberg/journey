@@ -1,14 +1,14 @@
 :: Calm Seas
-The seas are calm with a slight, salty southernly breeze. Your crew are in good spirits as they unfurl the \
+The seas are calm with a slight, salty southerly breeze. Your crew are in good spirits as they unfurl the \
 sails and tend to the rigging.
 
-You spot a flying fish leap from the water but it is too far to catch.
+You spot a flying fish leap from the water, but it is too far to catch.
 
 
 :: Rough Seas
 <<set $fuel -= 1>>\
 Strong winds whip the ocean up into a rage. Tall waves crash over the deck, as your crew hurries to secure \
-supplies to the deck and lower the top sails.
+supplies on the deck and lower the top sails.
 
 Before your crew is finished, a large wave washes a crate of coal overboard.
 
@@ -18,31 +18,31 @@ Before your crew is finished, a large wave washes a crate of coal overboard.
 A violent sea squall approaches rapidly from the north. Your crew rush to stow the sails and take the heavy \
 supplies below deck to ride it out. Rain drenches your face as you try to keep the ship on course.
 
-Above there is a brilliant flash of lightning, followed immediately by a deafening thunderclap. A crewmen on \
-the rigging loses his footing on the rain slick beams and falls overboard.
+Above there is a brilliant flash of lightning, followed immediately by a deafening thunderclap. A crewman on \
+the rigging loses his footing on the rain-slick beams and falls overboard.
 
-"Man Overboard!" shouts the foreman, as several men try to throw him a line. However, he is quickly swept \
+"Man overboard!" shouts the foreman, as several men try to throw him a line. However, he is quickly swept \
 under by the rolling waves and disappears from sight.
 
 
 :: Old Shipwreck
 <<set $fuel += 4>>\
-The Barrelman in the crows nest yells that he spotted a small vessel beached on a sandbar off the starboard side. \
+The Barrelman in the crow's nest yells that he spotted a small vessel beached on a sandbar off the starboard side. \
 You bring your ship around and send out a small rowboat to investigate.
 
-Your men return saying the ship is abandoned and likely been there for several years. However, they recovered \
-several crates of fuel in water-tight barrels so you count your blessing.
+Your men return saying the ship is abandoned and has likely been there for several years. However, they recovered \
+several crates of fuel in water-tight barrels so you count your blessings.
 
 
 :: Raft
 <<set $crew += 1>>\
-The Barrelman in the crows nest yells that he spotted a small raft on the horizon just ahead. As your ship approach \
+The Barrelman in the crow's nest yells that he spotted a small raft on the horizon just ahead. As your ship approaches \
 the raft you can make out the body of a man lying motionless across the bamboo raft.
 
-Your crew hoists the man up, and to your surprise he appears to be alive! Badly sunburned and dehydrated he \
+Your crew hoists the man up, and to your surprise he appears to be alive! Badly sunburned and dehydrated, he \
 can barely thank you before falling unconscious again.
 
-You send him below decks to recover. A few days and warm meals later his vigor had returned and he pledges \
+You send him below decks to recover. A few days and warm meals later his vigor has returned and he pledges \
 service to you for saving his life.
 
 
@@ -53,8 +53,8 @@ service to you for saving his life.
 "Land Ho!" shouts the Barrelman, pointing to a dark spot on the horizon ahead.
 
 Your crew rejoices as you approach a small port town on this remote island. The port is friendly to the empire and \
-your ship is welcomed to the docks. While your crew enjoys some much needed shore-leave, you set about requesting \
+your ship is welcomed to the docks. While your crew enjoys some much needed shore leave, you set about requesting \
 repairs and resupplies for your vessel.
 
 The workmen work quickly to patch any holes and repair the rigging. Fresh barrels of fuel are brought aboard. Even \
-a few young sailors looking for passage off the island signed on to swell your ranks.
+a few young sailors looking for passage off the island sign on to swell your ranks.
