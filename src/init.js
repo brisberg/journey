@@ -1,5 +1,5 @@
 // Setup Initial Static Data
-setup = {
+Object.assign(setup, {
   initialState: {
     distance: 100,
     hull: 20,
@@ -17,7 +17,7 @@ setup = {
   hullMax: 20,
   crewMax: 15,
   fuelMax: 15,
-};
+});
 
 // Setup custom functions
 window.customPrint = () => {
