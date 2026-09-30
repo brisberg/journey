@@ -4,7 +4,7 @@ Travel the high seas, overcoming challenges in an Oregon Trail inspired game.
 
 Twine 2.3.7\
 Tweego 2.1.1\
-SugarCube 2.31.1
+SugarCube 2.37.3
 
 ### Features
 

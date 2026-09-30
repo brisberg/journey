@@ -10,6 +10,6 @@
   "license": "MIT",
   "devDependencies": {
     "@brisberg/spindle": "^0.5.1",
-    "@types/twine-sugarcube": "^2.33.1"
+    "@types/twine-sugarcube": "^2.37.2"
   }
 }
