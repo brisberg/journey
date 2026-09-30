@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "description": "Travel the high seas, overcoming challenges in an Oregon Trail inspired game.",
   "scripts": {
-    "build": "yarn run spindle",
+    "build": "spindle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Brandon Risberg",
   "license": "MIT",
   "devDependencies": {
-    "@brisberg/spindle": "^0.3.0",
+    "@brisberg/spindle": "^0.5.0",
     "@types/twine-sugarcube": "^2.33.1"
   }
 }
