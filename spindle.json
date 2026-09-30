@@ -1,4 +1,5 @@
 {
+  "$schema": "./node_modules/@brisberg/spindle/schema.json",
   "src": ["src"],
   "head": ["header/*"]
 }
